@@ -5,6 +5,4 @@ const Users = mongoose.Schema({
     age: Number,
 })
 
-const User = mongoose.model('User', Users);
-
-module.exports = User;
+module.exports =mongoose.models.User || mongoose.model('User', Users);
